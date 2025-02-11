@@ -10,7 +10,7 @@ export function ServicesSection() {
         <ScrollAnimation>
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Comprehensive Services</h2>
-            <p className="text-lg text-muted-foreground max-w-2xl text-start">
+            <p className="text-lg text-muted-foreground md:px-[4rem] md:w-full text-start md:text-center">
               Discover how Ramadi Empire can elevate your construction and procurement projects with our expert services
               tailored to meet your specific needs.
             </p>
@@ -19,13 +19,13 @@ export function ServicesSection() {
        
           <ServicesGrid />
        
-        <ScrollAnimation>
+        {/* <ScrollAnimation>
           <div className="mt-12 text-center">
             <Button asChild size="lg">
               <Link href="/services">View All Services</Link>
             </Button>
           </div>
-        </ScrollAnimation>
+        </ScrollAnimation> */}
       </div>
     </section>
   )

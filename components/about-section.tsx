@@ -5,7 +5,7 @@ import { ScrollAnimation } from "@/components/scroll-animation"
 
 export function AboutSection() {
   return (
-    <section className="py-20 bg-muted/50" id="about">
+    <section className="py-20 " id="about">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <ScrollAnimation>
@@ -57,11 +57,7 @@ export function AboutSection() {
                 various sectors stands as a testament to our capabilities and dedication.
               </p>
             </ScrollAnimation>
-            <ScrollAnimation>
-              <Button size="lg" asChild>
-                <Link href="/about">Learn More About Our Journey</Link>
-              </Button>
-            </ScrollAnimation>
+
           </div>
         </div>
       </div>

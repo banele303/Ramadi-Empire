@@ -27,8 +27,8 @@ export function Header() {
           <Link href="/contact" className="hover:text-primary transition-colors">
             Contact
           </Link>
-          <Button asChild>
-            <Link href="/book">Book now</Link>
+          <Button asChild className="rounded-full bg-black">
+            <Link href="/contact">Book now</Link>
           </Button>
         </nav>
 

@@ -18,7 +18,7 @@ export function HeroSection() {
           quality={100}
           priority
         />
-        <div className="absolute inset-0 bg-black/90 z-10" />
+        <div className="absolute inset-0 bg-black/80 z-10" />
       </div>
 
       <div className="container mx-auto px-4 relative z-20 py-20 md:px-[5rem]">
@@ -47,7 +47,7 @@ export function HeroSection() {
       </div>
 
       <motion.div
-        className="absolute bottom-10 left-1/3 transform -translate-x-1/2 z-20 "
+        className="absolute bottom-10 left-1/3 md:left-1/2 transform -translate-x-1/2 z-20 "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.8 }}
