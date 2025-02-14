@@ -24,7 +24,7 @@ export default defineConfig({
   basePath: "/studio",
 
   cors: {
-    origin: ["https://your-vercel-domain.vercel.app", "http://localhost:3000"],
+    origin: ["https://ramadi-empire.vercel.app","https://www.ramadiempire.co.za", "http://localhost:3000"],
     credentials: true,
   },
 
