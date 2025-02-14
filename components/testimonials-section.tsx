@@ -7,21 +7,21 @@ const TESTIMONIALS = [
     role: "Project Manager, BuildCo Ltd.",
     content:
       "Ramadi Empire's expertise in tendering services has been instrumental in our success. Their attention to detail and industry knowledge is unparalleled.",
-    avatar: "/avatar-john.jpg",
+    avatar: "/placeholder.svg?height=40&width=40",
   },
   {
     name: "Jane Smith",
     role: "CFO, ConstructAll Inc.",
     content:
       "The quantity surveying team at Ramadi Empire has saved us both time and money. Their accuracy and professionalism are top-notch.",
-    avatar: "/avatar-jane.jpg",
+    avatar: "/placeholder.svg?height=40&width=40",
   },
   {
     name: "Mike Johnson",
     role: "Procurement Director, MegaBuild Corp",
     content:
       "We've been consistently impressed with Ramadi Empire's supply chain management. They've streamlined our procurement process significantly.",
-    avatar: "/avatar-mike.jpg",
+    avatar: "/placeholder.svg?height=40&width=40",
   },
 ]
 

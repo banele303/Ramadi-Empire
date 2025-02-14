@@ -24,7 +24,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class"  enableSystem disableTransitionOnChange>
           <Header />
           <main className="min-h-screen">{children}</main>
-          <Footer />
+        
         </ThemeProvider>
       </body>
     </html>

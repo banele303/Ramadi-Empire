@@ -27,6 +27,12 @@ export function Header() {
           <Link href="/contact" className="hover:text-primary transition-colors">
             Contact
           </Link>
+          <Link href="/post" className="hover:text-primary transition-colors">
+            Projects
+          </Link>
+          <Link href="/latest-insight" className="hover:text-primary transition-colors">
+            Blog
+          </Link>
           <Button asChild className="rounded-full bg-black">
             <Link href="/contact">Book now</Link>
           </Button>
