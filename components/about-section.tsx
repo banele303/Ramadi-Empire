@@ -11,7 +11,7 @@ export function AboutSection() {
           <ScrollAnimation>
             <div className="relative aspect-square">
               <Image
-                src="/tt1.jpg"
+                src="/new/rc3.jpeg"
                 alt="Ramadi Empire team working on a project"
                 layout="fill"
                 objectFit="cover"
@@ -29,34 +29,17 @@ export function AboutSection() {
             </ScrollAnimation>
             <ScrollAnimation>
               <p className="text-muted-foreground">
-                Ramadi Empire is more than a construction and procurement company; we are your strategic partner in
-                achieving project success. Founded on the principles of excellence, integrity, and innovation, our name
-                has become synonymous with reliability and precision in the industry.
+              At Ramadi Empire, we are committed to delivering world-class construction solutions that redefine skylines and transform communities. With expertise in engineering, procurement, and construction management (EPCM), we execute projects of all sizes with precision, efficiency, and innovation.
+<br/><br/>
+From commercial and residential developments to large-scale infrastructure projects, we provide end-to-end construction services tailored to meet the highest industry standards. Our skilled professionals, advanced machinery, and cutting-edge technology ensure seamless execution at every stage—from planning and design to construction and project completion.
+<br/><br/>
+Safety, sustainability, and quality are at the core of everything we do. We adhere to strict safety regulations, employ eco-friendly construction practices, and prioritize durability in every structure we build. Whether creating modern urban spaces, roads, bridges, or high-rise buildings, Ramadi Empire is dedicated to constructing spaces that stand the test of time.
+
+With a legacy of excellence and a vision for the future, Ramadi Empire is your trusted partner in construction.
               </p>
             </ScrollAnimation>
-            <ScrollAnimation>
-              <p className="text-muted-foreground">
-                With a comprehensive suite of services including tendering, quantity surveying, procurement, and
-                contract management, we bring a holistic approach to every project we undertake. Our team of seasoned
-                professionals combines years of experience with cutting-edge methodologies to deliver results that
-                consistently exceed expectations.
-              </p>
-            </ScrollAnimation>
-            <ScrollAnimation>
-              <p className="text-muted-foreground">
-                At Ramadi Empire, we understand that each project is unique. That's why we tailor our services to meet
-                the specific needs of our clients, ensuring cost-effectiveness without compromising on quality. Our
-                commitment to sustainable practices and technological innovation sets us apart in the industry, allowing
-                us to deliver forward-thinking solutions that stand the test of time.
-              </p>
-            </ScrollAnimation>
-            <ScrollAnimation>
-              <p className="text-muted-foreground">
-                From small-scale renovations to large-scale infrastructure projects, Ramadi Empire has the expertise and
-                resources to handle projects of any size and complexity. Our track record of successful projects across
-                various sectors stands as a testament to our capabilities and dedication.
-              </p>
-            </ScrollAnimation>
+           
+           
 
           </div>
         </div>
