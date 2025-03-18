@@ -6,6 +6,7 @@ import Link from "next/link"
 const SERVICES = [
   {
     title: "Construction Services",
+    slug:"construction",
     image: "/new/rc2.jpeg",
     items: ["Painting", "House Building", "ceiling installation", "Civil Construction", "aluminium windows", "Roof Installation and Repair",
 
@@ -14,6 +15,7 @@ const SERVICES = [
   {
     title: "Tendering Services",
     image: "/tendering.jpg",
+    slug:"construction",
     items: ["Bid preparation and submission", "Tender evaluation and analysis", "Contract negotiation and management", "Drafting tender proposals and documentation",
       "Compliance checks and documentation review",
       "Bill of quantities (BOQ) preparation",],
@@ -21,12 +23,14 @@ const SERVICES = [
   {
     title: "Quantity Surveying",
     image: "/ddtys2.jpg",
+    slug:"construction",
     items: ["Cost estimation and budgeting", "Material takeoff and cost control", "Project financial planning"],
   },
 
   {
     title: "Supply of Goods and Services",
     image: "/sss.jpg",
+    slug:"construction",
     items: [
       "Procurement of construction materials",
       "Supply of general goods for various industries",
@@ -62,7 +66,7 @@ export function ServicesGrid() {
               ))}
             </ul>
             <Button asChild variant="outline" className="w-full">
-              <Link href={`/services/${service.title.toLowerCase().replace(/\s+/g, "-")}`}>Learn More</Link>
+              <Link href={`/${service.slug.toLowerCase().replace(/\s+/g, "-")}`}>Learn More</Link>
             </Button>
           </div>
         </div>

@@ -30,7 +30,7 @@ export default async function Home() {
       <AboutSection />
       <ServicesSection />
       <div className="px-[2rem]">
-        <h1 className="text-4xl font-bold py-6 text-center">Projeccts</h1>
+        <h1 className="text-4xl font-bold py-6 text-center">Projects</h1>
         <BlogList posts={posts} />
       </div>
       <TeamSection />
