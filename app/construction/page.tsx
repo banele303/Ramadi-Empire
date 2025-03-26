@@ -21,12 +21,12 @@ import {
 
 export default function ConstructionLandingPage() {
     return (
-        <div className="flex min-h-screen flex-col">
+        <div className="flex  flex-col mb-[-50rem]">
 
 
-            <main className="flex-1">
+            <main className="flex-1 ">
                 {/* Hero Section */}
-                <section className="relative">
+                <section className="relative h-[60vh] px-[2rem]">
                     <div className="absolute inset-0 z-0">
                         <Image
                             src="/new/window.jpeg"
@@ -36,7 +36,7 @@ export default function ConstructionLandingPage() {
                             priority
                         />
                     </div>
-                    <div className="container items-center relative z-10 py-24 md:py-32 lg:py-40">
+                    <div className="container items-center relative z-10 py-4 md:py-12 lg:py-12">
                         <div className="mx-auto max-w-3xl space-y-5 text-white">
                             <h1 className="text-2xl md:text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                                 Building Tomorrow&apos;s Infrastructure Today
@@ -58,31 +58,10 @@ export default function ConstructionLandingPage() {
                     <div className="absolute inset-0 bg-black/50 " />
                 </section>
 
-                {/* Trusted By Section */}
-                {/* <section className="border-y bg-muted/50 py-10">
-                    <div className="container">
-                        <h2 className="text-center text-lg font-medium text-muted-foreground mb-8">Trusted by Industry Leaders</h2>
-                        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
-                            {[1, 2, 3, 4, 5, 6].map((i) => (
-                                <div
-                                    key={i}
-                                    className="h-12 w-full max-w-[160px] opacity-70 grayscale transition-all hover:opacity-100 hover:grayscale-0"
-                                >
-                                    <Image
-                                        src={`/placeholder.svg?height=60&width=160&text=Partner ${i}`}
-                                        alt={`Partner ${i}`}
-                                        width={160}
-                                        height={60}
-                                        className="h-full w-full object-contain"
-                                    />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </section> */}
+
 
                 {/* About Section */}
-                <section id="about" className="py-16 md:py-24">
+                <section id="about" className="py-16 md:py-24 px-[2rem]">
                     <div className="container mx-auto">
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             <div className="space-y-6">
@@ -90,28 +69,35 @@ export default function ConstructionLandingPage() {
                                     About Ramadi Empire
                                 </div>
                                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
-                                    A Legacy of Excellence in Construction Since 1998
+                                    A Legacy of Excellence in Construction Since 2019
                                 </h2>
-                                <p className="text-muted-foreground">
-                                    Ramadi Empire Construction was founded with a simple yet powerful vision: to transform the construction
-                                    industry through unwavering commitment to quality, innovation, and client satisfaction. For over two
-                                    decades, we've been at the forefront of the construction industry, delivering exceptional projects
-                                    that stand the test of time.
+                                <p>
+                                    Ramadi Empire (Pty) Ltd is a proudly 100% black-owned construction and consultancy company with
+                                    registration number 2020/504715/07, founded by Ramadi Mukondeleli.
                                 </p>
-                                <p className="text-muted-foreground">
-                                    Our journey began with small residential projects, but our dedication to excellence quickly earned us
-                                    a reputation for reliability and craftsmanship. Today, we're proud to be one of the leading
-                                    construction companies in the region, with a portfolio spanning commercial complexes, industrial
-                                    facilities, luxury residences, and public infrastructure.
+                                <p>
+                                    Our inception stems from our passion to create and implement solutions that address the core needs of
+                                    our people and communities we serve. Our dedication to bringing ease, convenience, and superior
+                                    quality to our clients is etched in every project we undertake.
+                                </p>
+                                <p>
+                                    Our diverse portfolio is the result of extensive experience across a variety of industries.
+                                    Specialising in Civil and Construction works, we provide a wide range of services that include Plant
+                                    Hire, Hygiene Services, Laundry Services, and Project Management.
+                                </p>
+                                <p>
+                                    Ramadi Empire is also a proud member of CIDB, with a grading of 1GB and PE 1CE. These memberships not
+                                    only underscore our credibility, but they also highlight our commitment to meeting industry standards
+                                    and delivering excellence in all our projects.
                                 </p>
                                 <div className="grid grid-cols-2 gap-4 pt-4">
                                     <div className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
-                                        <span>25+ Years Experience</span>
+                                        <span>5+ Years Experience</span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
-                                        <span>500+ Projects Completed</span>
+                                        <span>100+ Projects Completed</span>
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
@@ -119,7 +105,7 @@ export default function ConstructionLandingPage() {
                                     </div>
                                     <div className="flex items-center gap-2">
                                         <CheckCircle className="h-5 w-5 text-primary" />
-                                        <span>Award-Winning Designs</span>
+                                        <span>Award-Winning Projects</span>
                                     </div>
                                 </div>
                             </div>
@@ -136,9 +122,9 @@ export default function ConstructionLandingPage() {
                 </section>
 
                 {/* Services Section */}
-                <section id="services" className="py-16 md:py-24 bg-muted/30 md:pl-[2rem]">
+                <section id="services" className="py-16 md:py-24 bg-muted/30 pl-0 md:pl-[2rem] ">
                     <div className="container">
-                        <div className="text-center max-w-3xl mx-auto mb-16">
+                        <div className="max-w-3xl mx-auto mb-16 px-5">
                             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary mb-4">
                                 Our Services
                             </div>
@@ -161,7 +147,7 @@ export default function ConstructionLandingPage() {
                                 </TabsList>
                             </div>
 
-                            <TabsContent value="commercial" className="space-y-8 mx-auto items-center pl-[2rem] md:pl-[4rem]">
+                            <TabsContent value="commercial" className="space-y-8 mx-auto items-center px-5 md:pl-[4rem]">
                                 <div className="grid md:grid-cols-3 gap-6 ">
                                     <Card>
                                         <CardContent className="p-6 space-y-4">
@@ -340,7 +326,7 @@ export default function ConstructionLandingPage() {
                                 <div className="bg-primary/5 rounded-lg p-6 md:p-8">
                                     <h3 className="text-xl font-bold mb-4">Residential Construction Excellence</h3>
                                     <p className="mb-4">
-                                        Your home is more than just a building—it's where life happens. At Ramadi Empire Construction, we
+                                        Your home is more than just a building—it&apos;s where life happens. At Ramadi Empire Construction, we
                                         approach residential projects with this understanding, creating spaces that perfectly balance
                                         functionality, aesthetics, and comfort.
                                     </p>
@@ -350,7 +336,7 @@ export default function ConstructionLandingPage() {
                                         transparency and collaboration, keeping you informed and involved at every stage.
                                     </p>
                                     <p>
-                                        Whether you're building your dream home from the ground up or renovating your current space, our
+                                        Whether you&apos;re building your dream home from the ground up or renovating your current space, our
                                         experienced team delivers exceptional craftsmanship and attention to detail. We use only the highest
                                         quality materials and advanced construction techniques to create homes that are beautiful, durable,
                                         and energy-efficient.
@@ -544,20 +530,20 @@ export default function ConstructionLandingPage() {
                 </section> */}
 
                 {/* Process Section */}
-                <section id="process" className="py-16 md:py-24 bg-muted/30">
-                    <div className="container">
+                <section id="process" className="py-16 md:py-24 bg-muted/30 flex flex-col items-center justify-center mx-auto">
+                    <div className="container flex flex-col items-center">
                         <div className="text-center max-w-3xl mx-auto mb-16">
                             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary mb-4">
                                 Our Process
                             </div>
-                            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">How We Bring Your Vision to Life</h2>
-                            <p className="text-muted-foreground">
+                            <h2 className="text-3xl font-bold text-start tracking-tight sm:text-3xl mb-4 px-[2rem]">How We Bring Your Vision to Life</h2>
+                            <p className="text-muted-foreground text-start px-[2rem]">
                                 Our proven construction process ensures transparency, efficiency, and exceptional results. We guide you
                                 through each phase of your project with clear communication and expert management.
                             </p>
                         </div>
 
-                        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mx-auto items-center justify-center px-5">
                             {[
                                 {
                                     icon: <Clock className="h-10 w-10 text-primary" />,
@@ -603,20 +589,20 @@ export default function ConstructionLandingPage() {
                             ))}
                         </div>
 
-                        <div className="mt-16 bg-primary/5 rounded-lg p-6 md:p-8">
-                            <h3 className="text-xl font-bold mb-4">Our Commitment to Excellence</h3>
-                            <p className="mb-4">
+                        <div className="mt-16 bg-primary/5 rounded-lg p-6 md:p-8 text-center mx-5">
+                            <h3 className="text-xl font-bold mb-4 text-start">Our Commitment to Excellence</h3>
+                            <p className="mb-4 text-start">
                                 At Ramadi Empire Construction, we believe that a well-defined process is the foundation of successful
                                 construction projects. Our systematic approach ensures that every aspect of your project is carefully
                                 planned and executed, minimizing surprises and maximizing satisfaction.
                             </p>
-                            <p className="mb-4">
+                            <p className="mb-4 text-start">
                                 Throughout the construction process, we maintain open lines of communication, providing regular updates
                                 and addressing any questions or concerns promptly. Our project management team uses advanced software to
                                 track progress, manage resources, and ensure that your project stays on schedule and within budget.
                             </p>
-                            <p>
-                                We understand that construction projects can be complex and sometimes stressful. That's why we strive to
+                            <p className="mb-4 text-start">
+                                We understand that construction projects can be complex and sometimes stressful. That&apos;s why we strive to
                                 make the process as smooth and transparent as possible, handling all the details so you can focus on the
                                 excitement of seeing your vision come to life.
                             </p>
@@ -624,21 +610,22 @@ export default function ConstructionLandingPage() {
                     </div>
                 </section>
 
+
                 {/* Testimonials Section */}
-                <section id="testimonials" className="py-16 md:py-24">
-                    <div className="container">
+                <section id="testimonials" className="py-16 md:py-24 flex flex-col items-center justify-center">
+                    <div className="container flex flex-col items-center px-[1rem]">
                         <div className="text-center max-w-3xl mx-auto mb-16">
                             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary mb-4">
                                 Client Testimonials
                             </div>
                             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">What Our Clients Say</h2>
                             <p className="text-muted-foreground">
-                                Don't just take our word for it. Hear from clients who have experienced the Ramadi Empire difference
+                                Don&apos;t just take our word for it. Hear from clients who have experienced the Ramadi Empire difference
                                 firsthand and see why they continue to recommend our services.
                             </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-center">
                             {[
                                 {
                                     name: "Michael Thompson",
@@ -650,7 +637,7 @@ export default function ConstructionLandingPage() {
                                     name: "Sarah Johnson",
                                     role: "Homeowner",
                                     quote:
-                                        "Building our dream home with Ramadi Empire was an incredible experience. Their team guided us through every step of the process, from initial design to final touches. The craftsmanship is exceptional, and they were always responsive to our questions and requests. We couldn't be happier with our new home.",
+                                        "Building our dream home with Ramadi Empire was an incredible experience. Their team guided us through every step of the process, from initial design to final touches. The craftsmanship is exceptional, and they were always responsive to our questions and requests. We couldn&apos;t be happier with our new home.",
                                 },
                                 {
                                     name: "David Chen",
@@ -677,21 +664,24 @@ export default function ConstructionLandingPage() {
                                         "Ramadi Empire Construction's expertise in healthcare facility construction was evident throughout our medical center project. They understood the unique requirements of our industry and created a space that enhances patient care and staff efficiency. Their attention to detail and quality control was exceptional.",
                                 },
                             ].map((testimonial, index) => (
-                                <div key={index} className="bg-muted/30 rounded-lg p-6 border shadow-sm">
-                                    <div className="flex items-center mb-4">
-                                        {[1, 2, 3, 4, 5].map((star) => (
-                                            <Star key={star} className="h-5 w-5 fill-primary text-primary" />
-                                        ))}
-                                    </div>
-                                    <blockquote className="mb-4 text-muted-foreground">"{testimonial.quote}"</blockquote>
-                                    <div className="flex items-center">
+                                <div key={index} className="bg-muted/30 rounded-lg p-6 border shadow-sm flex flex-col ">
+                                    <div className="flex items-start mb-4">
                                         <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-3">
                                             <span className="text-primary font-bold">{testimonial.name.charAt(0)}</span>
                                         </div>
-                                        <div>
+                                        <div className="text-start mr-3">
                                             <div className="font-semibold">{testimonial.name}</div>
                                             <div className="text-sm text-muted-foreground">{testimonial.role}</div>
                                         </div>
+                                        {[1, 2, 3, 4, 5].map((star) => (
+                                            <Star key={star} className="h-5 w-5 fill-primary text-primary text-center" />
+                                        ))}
+                                    </div>
+                                  
+                                    <blockquote className="mb-4 text-muted-foreground text-start">"{testimonial.quote}"</blockquote>
+                                    <div className="flex items-center justify-center">
+
+
                                     </div>
                                 </div>
                             ))}
@@ -700,15 +690,15 @@ export default function ConstructionLandingPage() {
                 </section>
 
                 {/* FAQ Section */}
-                <section id="faq" className="py-16 md:py-24 bg-muted/30">
+                <section id="faq" className="py-16 md:py-24 bg-muted/30 px-[1rem]">
                     <div className="container">
                         <div className="text-center max-w-3xl mx-auto mb-16">
                             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary mb-4">
                                 Frequently Asked Questions
                             </div>
                             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Answers to Common Questions</h2>
-                            <p className="text-muted-foreground">
-                                We've compiled answers to questions we frequently receive about our services, process, and industry. If
+                            <p className="text-muted-foreground text-start">
+                                We&apos;ve compiled answers to questions we frequently receive about our services, process, and industry. If
                                 you don't find what you're looking for, please don't hesitate to contact us.
                             </p>
                         </div>
@@ -764,15 +754,15 @@ export default function ConstructionLandingPage() {
                         </div>
 
                         <div className="text-center mt-12">
-                            <p className="text-muted-foreground mb-4">Still have questions? We're here to help.</p>
+                            <p className="text-muted-foreground mb-4">Still have questions? We&apos;re here to help.</p>
                             <Button size="lg">Contact Our Team</Button>
                         </div>
                     </div>
                 </section>
 
                 {/* Blog Section */}
-                <section id="blog" className="py-16 md:py-24">
-                    <div className="container">
+                <section id="blog" className="py-16 md:py-24 flex flex-col items-center justify-center px-[1rem]">
+                    <div className="container flex flex-col items-center">
                         <div className="text-center max-w-3xl mx-auto mb-16">
                             <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary mb-4">
                                 Industry Insights
@@ -784,7 +774,7 @@ export default function ConstructionLandingPage() {
                             </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6  ">
                             {[
                                 {
                                     title: "The Future of Sustainable Construction: Trends to Watch",
@@ -792,6 +782,7 @@ export default function ConstructionLandingPage() {
                                         "Explore emerging technologies and practices that are shaping the future of eco-friendly building design and construction.",
                                     date: "June 15, 2023",
                                     category: "Sustainability",
+                                    image: "/construction/pannels.jpg", // Unique image
                                 },
                                 {
                                     title: "Understanding Construction Costs: A Comprehensive Breakdown",
@@ -799,6 +790,7 @@ export default function ConstructionLandingPage() {
                                         "Demystifying the factors that influence construction costs and how to budget effectively for your next project.",
                                     date: "May 28, 2023",
                                     category: "Planning",
+                                    image: "/construction/mechanical1.jpg", // Unique image
                                 },
                                 {
                                     title: "Commercial vs. Residential Construction: Key Differences",
@@ -806,6 +798,7 @@ export default function ConstructionLandingPage() {
                                         "A detailed comparison of commercial and residential construction processes, requirements, and considerations.",
                                     date: "April 10, 2023",
                                     category: "Industry",
+                                    image: "/construction/construction.jpg", // Unique image
                                 },
                                 {
                                     title: "Smart Buildings: Integrating Technology into Modern Construction",
@@ -813,6 +806,7 @@ export default function ConstructionLandingPage() {
                                         "How IoT, automation, and smart systems are revolutionizing building functionality and user experience.",
                                     date: "March 22, 2023",
                                     category: "Technology",
+                                    image: "/construction/plumbing5.jpg", // Unique image
                                 },
                                 {
                                     title: "Navigating Building Codes and Regulations: A Guide for Property Owners",
@@ -820,6 +814,7 @@ export default function ConstructionLandingPage() {
                                         "Essential information about building codes, permits, and compliance requirements for your construction project.",
                                     date: "February 14, 2023",
                                     category: "Regulations",
+                                    image: "/construction/interior-const1.jpg", // Unique image
                                 },
                                 {
                                     title: "Renovation vs. New Construction: Making the Right Choice",
@@ -827,20 +822,21 @@ export default function ConstructionLandingPage() {
                                         "Factors to consider when deciding between renovating an existing structure or building new from the ground up.",
                                     date: "January 30, 2023",
                                     category: "Planning",
+                                    image: "/construction/p-breakdown.jpg", // Unique image
                                 },
                             ].map((article, index) => (
-                                <div key={index} className="group border rounded-lg overflow-hidden bg-background shadow-sm">
+                                <div key={index} className="group border rounded-lg overflow-hidden bg-background shadow-sm flex flex-col items">
                                     <div className="aspect-video w-full overflow-hidden">
                                         <Image
-                                            src={`/new/newc3.jpg`}
+                                            src={article.image}
                                             alt={article.title}
                                             width={500}
                                             height={300}
                                             className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                                         />
                                     </div>
-                                    <div className="p-6">
-                                        <div className="flex items-center gap-2 mb-3">
+                                    <div className="p-6 ">
+                                        <div className="flex  gap-2 mb-3">
                                             <div className="text-xs font-medium bg-primary/10 text-primary px-2 py-1 rounded">
                                                 {article.category}
                                             </div>
@@ -866,17 +862,18 @@ export default function ConstructionLandingPage() {
                     </div>
                 </section>
 
+
                 {/* Contact Section */}
-                <section id="contact" className="py-16 md:py-24 bg-muted/30 mx-auto flex justify-center w-full items-center">
+                <section id="contact" className="py-16 md:py-24 bg-muted/30 mx-auto flex justify-center w-full items-center px-[1rem]">
                     <div className="container">
                         <div className="grid lg:grid-cols-2 gap-12">
                             <div>
                                 <div className="inline-block rounded-lg bg-primary/10 px-3 py-1 text-sm text-primary mb-4">
                                     Get In Touch
                                 </div>
-                                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Let's Discuss Your Project</h2>
+                                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-4">Let&apos;s Discuss Your Project</h2>
                                 <p className="text-muted-foreground mb-6">
-                                    Whether you're ready to start building or just exploring options, our team is here to help. Contact us
+                                    Whether you&apos;re ready to start building or just exploring options, our team is here to help. Contact us
                                     today to schedule a consultation and take the first step toward bringing your construction project to
                                     life.
                                 </p>
@@ -893,7 +890,7 @@ export default function ConstructionLandingPage() {
                                         <Phone className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                                         <div>
                                             <h3 className="font-semibold">Phone</h3>
-                                            <p className="text-muted-foreground">(555) 123-4567</p>
+                                            <p className="text-muted-foreground">+27 76 223 2914</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
@@ -915,7 +912,7 @@ export default function ConstructionLandingPage() {
                                 <div className="bg-primary/5 rounded-lg p-6">
                                     <h3 className="text-lg font-bold mb-3">Ready to Start Your Project?</h3>
                                     <p className="text-muted-foreground mb-4">
-                                        Schedule a free consultation with one of our construction experts. We'll discuss your vision,
+                                        Schedule a free consultation with one of our construction experts. We&apos;ll discuss your vision,
                                         requirements, and how Ramadi Empire Construction can bring your project to life.
                                     </p>
                                     <Button size="lg">Schedule Consultation</Button>
@@ -1018,7 +1015,7 @@ export default function ConstructionLandingPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-16 md:py-24 flex justify-center items-center mx-auto">
+                <section className="py-16 md:py-24 flex justify-center items-center mx-auto px-[1rem]">
                     <div className="container">
                         <div className="bg-primary text-primary-foreground rounded-lg p-8 md:p-12">
                             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -1028,7 +1025,7 @@ export default function ConstructionLandingPage() {
                                     </h2>
                                     <p className="mb-6 text-primary-foreground/90">
                                         Partner with Ramadi Empire Construction for exceptional quality, innovative solutions, and a seamless
-                                        building experience. Let's create something extraordinary together.
+                                        building experience. Let&apos;s create something extraordinary together.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <Button variant="secondary" size="lg">
@@ -1058,7 +1055,7 @@ export default function ConstructionLandingPage() {
             </main>
 
             {/* Footer */}
-            <footer className="bg-muted/50 border-t items-center mx-auto">
+            <footer className="bg-muted/50 border-t items-center mb-0 mx-auto w-full px-[2rem]">
                 <div className="container py-12 md:py-16">
                     <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
                         <div className="col-span-2">
