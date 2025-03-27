@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 import type React from "react" // Added import for React
+import Navbar from "./construction/navbar"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider attribute="class"  enableSystem disableTransitionOnChange>
           {/* <Header /> */}
+          <Navbar/>
           <main className="min-h-screen">{children}</main>
         
         </ThemeProvider>

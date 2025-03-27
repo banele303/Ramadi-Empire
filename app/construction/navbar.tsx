@@ -88,8 +88,11 @@ export default function Navbar() {
                         >
                             Home
                         </Link>
-                        <Link href="/#about" className="text-sm font-medium transition-colors hover:text-primary">
+                        <Link href="/about" className="text-sm font-medium transition-colors hover:text-primary">
                             About
+                        </Link>
+                        <Link href="/construction" className="text-sm font-medium transition-colors hover:text-primary">
+                            Construction
                         </Link>
 
                         {/* Services Dropdown */}
