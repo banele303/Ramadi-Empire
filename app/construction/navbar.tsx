@@ -124,13 +124,18 @@ export default function Navbar() {
                         <Link href="/#why-choose-us" className="text-sm font-medium transition-colors hover:text-primary">
                             Why Choose Us
                         </Link>
+
+
+
                         <Link href="/#contact" className="text-sm font-medium transition-colors hover:text-primary">
                             Contact
                         </Link>
                     </nav>
 
                     <div className="hidden md:flex">
-                        <Button>Get In Touch</Button>
+                        <Link href="tel:+27 76 223 2914">
+                            <Button size="lg">Call Now</Button>
+                        </Link>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -195,13 +200,15 @@ export default function Navbar() {
                             Why Choose Us
                         </Link>
                         <Link
-                            href="/#contact"
+                            href="tel:+27 76 223 2914"
                             className="flex items-center gap-2 py-3 text-lg font-medium border-b"
                             onClick={() => setIsOpen(false)}
                         >
                             <Phone className="h-5 w-5" />
                             Contact
                         </Link>
+
+
 
                         <div className="mt-6">
                             <Button className="w-full" onClick={() => setIsOpen(false)}>

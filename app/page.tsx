@@ -7,6 +7,8 @@ import { ContactCTA } from "@/components/contact-cta"
 import BlogList from "@/components/BlogList"
 import { client } from '@/sanity/lib/client'
 import { Footer } from "@/components/footer"
+import HomeServices from "@/components/services"
+import Navbar from "./construction/navbar"
 
 
 async function getPosts() {
@@ -26,9 +28,11 @@ export default async function Home() {
   const posts = await getPosts()
   return (
     <div className="flex flex-col">
+      <Navbar/>
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
+      {/* <ServicesSection /> */}
+      <HomeServices/>
       <div className="px-[2rem]">
         <h1 className="text-4xl font-bold py-6 text-center">Projects</h1>
         <BlogList posts={posts} />

@@ -4,98 +4,11 @@ import { Phone, Mail, MapPin, ChevronRight } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 
-export default function Home() {
+export default function HomeServices() {
   return (
     <>
-      {/* Hero Section */}
-      <section id="home" className="relative">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/placeholder.svg?height=800&width=1920"
-            alt="Construction workers silhouetted against sunset"
-            fill
-            className="object-cover brightness-50"
-            priority
-          />
-        </div>
-        <div className="container relative z-10 flex flex-col items-center justify-center py-24 md:py-32 lg:py-48 text-center text-white">
-          <div className="relative mb-6 h-20 w-20">
-            <div className="absolute inset-0 flex items-center justify-center font-bold text-primary text-4xl">
-              <span className="relative">
-                RE
-                <span className="absolute -top-4 left-1/2 -translate-x-1/2 text-xl">👑</span>
-              </span>
-            </div>
-          </div>
-          <h1 className="mb-2 text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
-            RAMADI <span className="text-primary">Empire</span>
-          </h1>
-          <p className="mb-8 max-w-3xl text-lg md:text-xl text-gray-200">
-            A proudly 100% black-owned construction and consultancy company dedicated to creating and implementing
-            solutions that address the core needs of our people and communities.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="#services">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Our Services
-              </Button>
-            </Link>
-            <Link href="#contact">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Contact Us
-              </Button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-16 md:py-24 bg-muted/50">
-        <div className="container">
-          <div className="flex flex-col md:flex-row gap-12">
-            <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold tracking-tight mb-6">ABOUT US</h2>
-              <div className="space-y-4 text-muted-foreground">
-                <p>
-                  Ramadi Empire (Pty) Ltd is a proudly 100% black-owned construction and consultancy company with
-                  registration number 2020/504715/07, founded by Ramadi Mukondeleli.
-                </p>
-                <p>
-                  Our inception stems from our passion to create and implement solutions that address the core needs of
-                  our people and communities we serve. Our dedication to bringing ease, convenience, and superior
-                  quality to our clients is etched in every project we undertake.
-                </p>
-                <p>
-                  Our diverse portfolio is the result of extensive experience across a variety of industries.
-                  Specialising in Civil and Construction works, we provide a wide range of services that include Plant
-                  Hire, Hygiene Services, Laundry Services, and Project Management.
-                </p>
-                <p>
-                  Ramadi Empire is also a proud member of CIDB, with a grading of 1GB and PE 1CE. These memberships not
-                  only underscore our credibility, but they also highlight our commitment to meeting industry standards
-                  and delivering excellence in all our projects.
-                </p>
-              </div>
-              <div className="mt-8">
-                <Button className="group">
-                  Learn More <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
-                </Button>
-              </div>
-            </div>
-            <div className="md:w-1/2 relative min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Construction site with excavator"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Services Section */}
-      <section id="services" className="py-16 md:py-24">
+       {/* Services Section */}
+      <section id="services" className="py-16 md:py-24 px-[2rem]">
         <div className="container">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold tracking-tight mb-4">SERVICES WE OFFER</h2>
@@ -201,7 +114,7 @@ export default function Home() {
       </section>
 
       {/* Why Choose Us Section */}
-      <section id="why-choose-us" className="py-16 md:py-24 bg-muted/50">
+      <section id="why-choose-us" className="py-16 md:py-24 bg-muted/50 px-[2rem]">
         <div className="container">
           <div className="flex flex-col md:flex-row-reverse gap-12">
             <div className="md:w-1/2">
@@ -239,7 +152,7 @@ export default function Home() {
             </div>
             <div className="md:w-1/2 relative min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=600&width=800"
+                src="/construction/plumbing.jpg"
                 alt="Construction site with building and cranes"
                 fill
                 className="object-cover"
@@ -250,7 +163,7 @@ export default function Home() {
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="py-16 md:py-24 bg-primary/10">
+      <section className="py-16 md:py-24 bg-primary/10 px-[2rem]">
         <div className="container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div className="bg-card p-8 rounded-lg shadow-sm border">
@@ -275,58 +188,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-16 md:py-24">
-        <div className="container">
-          <div className="flex flex-col md:flex-row gap-12">
-            <div className="md:w-1/2">
-              <h2 className="text-3xl font-bold tracking-tight mb-6">CONTACT US</h2>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <MapPin className="h-6 w-6 text-primary shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-bold mb-1">Address</h3>
-                    <p className="text-muted-foreground">
-                      50 Bezuidenhout avenue
-                      <br />
-                      Bezuidenhout Avenue
-                      <br />
-                      Johannesburg
-                      <br />
-                      2094
-                    </p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Phone className="h-6 w-6 text-primary shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-bold mb-1">Phone</h3>
-                    <p className="text-muted-foreground">076 2232 914</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <Mail className="h-6 w-6 text-primary shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-bold mb-1">Email</h3>
-                    <p className="text-muted-foreground">ramadiempire@gmail.com</p>
-                  </div>
-                </div>
-              </div>
-              <div className="mt-8">
-                <Button className="w-full sm:w-auto">Send Us A Message</Button>
-              </div>
-            </div>
-            <div className="md:w-1/2 relative min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden">
-              <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Construction workers looking at blueprint"
-                fill
-                className="object-cover"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+     
     </>
   )
 }

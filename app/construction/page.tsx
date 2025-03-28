@@ -21,7 +21,7 @@ import {
 
 export default function ConstructionLandingPage() {
     return (
-        <div className="flex  flex-col mb-[-50rem]">
+        <div className="flex  flex-col mb-[-10rem]">
 
 
             <main className="flex-1 ">

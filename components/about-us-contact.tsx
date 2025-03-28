@@ -5,10 +5,13 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import Image from "next/image"
 import { ScrollAnimation } from "@/components/scroll-animation"
+import { Footer } from "./footer"
 
 export function ContactHeroSection() {
     return (
-        <section className="relative min-h-screen flex items-center overflow-hidden">
+        
+        <>
+         <section className="relative h-[50vh] flex items-center overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/tt1.jpg"
@@ -24,7 +27,7 @@ export function ContactHeroSection() {
             <div className="container mx-auto px-4 relative items-center z-20 py-20 md:px-[5rem]">
                 <div className="max-w-3xl space-y-6">
                     <ScrollAnimation>
-                        <h1 className="text-4xl md:text-6xl font-bold text-white leading-[3rem]">Welcome to Ramadi Empire</h1>
+                        <h1 className="text-3xl md:text-6xl font-bold text-white leading-[3rem]">Welcome to Ramadi Empire</h1>
                     </ScrollAnimation>
                     <ScrollAnimation delay={0.2}>
                         <p className="text-xl md:text-xl text-gray-200 leading-8">
@@ -38,6 +41,9 @@ export function ContactHeroSection() {
             </div>
 
         </section>
+        
+        </>
+       
     )
 }
 
