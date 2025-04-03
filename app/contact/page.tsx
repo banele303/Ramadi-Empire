@@ -38,7 +38,7 @@ export default function ContactPage() {
                   <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold">Our Office</h3>
-                    <p className="text-muted-foreground">123 Construction Way, Building City, BC 12345</p>
+                    <p className="text-muted-foreground">ramadiempire@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

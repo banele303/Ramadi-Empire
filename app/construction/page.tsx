@@ -677,7 +677,7 @@ export default function ConstructionLandingPage() {
                                             <Star key={star} className="h-5 w-5 fill-primary text-primary text-center" />
                                         ))}
                                     </div>
-                                  
+
                                     <blockquote className="mb-4 text-muted-foreground text-start">"{testimonial.quote}"</blockquote>
                                     <div className="flex items-center justify-center">
 
@@ -883,7 +883,10 @@ export default function ConstructionLandingPage() {
                                         <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                                         <div>
                                             <h3 className="font-semibold">Our Office</h3>
-                                            <p className="text-muted-foreground">123 Construction Way, Building City, BC 12345</p>
+                                            <p className="text-muted-foreground">50 Bezuidenhout avenue
+                                                Bezuidenhout Avenue
+                                                Johannesburg
+                                                2094</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">

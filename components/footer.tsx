@@ -14,18 +14,18 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Services</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/services/construction" className="text-muted-foreground hover:text-primary">
+                <Link href="/construction" className="text-muted-foreground hover:text-primary">
                   Construction
                 </Link>
               </li>
               <li>
                 <Link href="/services/tendering" className="text-muted-foreground hover:text-primary">
-                  Tendering
+                  Project Managements
                 </Link>
               </li>
               <li>
-                <Link href="/services/quantity-surveying" className="text-muted-foreground hover:text-primary">
-                  Quantity Surveying
+                <Link href="/services/project-management" className="text-muted-foreground hover:text-primary">
+                  Project Management
                 </Link>
               </li>
             </ul>
