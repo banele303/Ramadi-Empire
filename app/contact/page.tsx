@@ -52,7 +52,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-muted-foreground">info@Ramadi Empire-construction.com</p>
+                    <p className="text-muted-foreground">infoRamadi Empire-construction.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">

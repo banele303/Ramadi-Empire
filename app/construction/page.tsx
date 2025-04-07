@@ -883,10 +883,7 @@ export default function ConstructionLandingPage() {
                                         <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                                         <div>
                                             <h3 className="font-semibold">Our Office</h3>
-                                            <p className="text-muted-foreground">50 Bezuidenhout avenue
-                                                Bezuidenhout Avenue
-                                                Johannesburg
-                                                2094</p>
+                                            <p className="text-muted-foreground">157 Van Riebeek Ave, Edenvale, Johannesburg , 1609</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
@@ -900,14 +897,15 @@ export default function ConstructionLandingPage() {
                                         <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                                         <div>
                                             <h3 className="font-semibold">Email</h3>
-                                            <p className="text-muted-foreground">info@Ramadi Empire-construction.com</p>
+                                            <p className="text-muted-foreground">ramadiempire@gmail.com</p>
                                         </div>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <Clock className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                                         <div>
                                             <h3 className="font-semibold">Hours</h3>
-                                            <p className="text-muted-foreground">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                                            <p className="text-muted-foreground">Monday - Friday: 8:30 AM - 5:00 PM</p>
+                                            <p className="text-muted-foreground">Week end - Closed</p>
                                         </div>
                                     </div>
                                 </div>
@@ -1032,14 +1030,24 @@ export default function ConstructionLandingPage() {
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4">
                                         <Button variant="secondary" size="lg">
-                                            Get a Free Quote
+
+                                            <Link
+                                                href="/contact"
+                                            >
+                                                Get a Free Quote
+                                            </ Link>
                                         </Button>
                                         <Button
                                             variant="outline"
                                             size="lg"
                                             className="bg-transparent text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10"
                                         >
-                                            View Our Projects
+                                            <Link
+                                                href="/construction"
+                                            >
+                                                View Our Projects
+                                            </ Link>
+
                                         </Button>
                                     </div>
                                 </div>
@@ -1056,228 +1064,6 @@ export default function ConstructionLandingPage() {
                     </div>
                 </section>
             </main>
-
-            {/* Footer */}
-            <footer className="bg-muted/50 border-t items-center mb-0 mx-auto w-full px-[2rem]">
-                <div className="container py-12 md:py-16">
-                    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-8">
-                        <div className="col-span-2">
-                            <div className="flex items-center gap-2 mb-4">
-                                <Building2 className="h-6 w-6" />
-                                <span className="text-xl font-bold">Ramadi Empire</span>
-                            </div>
-                            <p className="text-muted-foreground mb-4 max-w-xs">
-                                Building excellence through quality craftsmanship, innovative solutions, and unwavering integrity.
-                            </p>
-                            <div className="flex gap-4">
-                                <a
-                                    href="#"
-                                    className="h-8 w-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
-                                    </svg>
-                                </a>
-                                <a
-                                    href="#"
-                                    className="h-8 w-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
-                                    </svg>
-                                </a>
-                                <a
-                                    href="#"
-                                    className="h-8 w-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
-                                    </svg>
-                                </a>
-                                <a
-                                    href="#"
-                                    className="h-8 w-8 flex items-center justify-center rounded-full bg-primary/10 text-primary hover:bg-primary/20"
-                                >
-                                    <svg
-                                        xmlns="http://www.w3.org/2000/svg"
-                                        width="16"
-                                        height="16"
-                                        viewBox="0 0 24 24"
-                                        fill="none"
-                                        stroke="currentColor"
-                                        strokeWidth="2"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                    >
-                                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 className="font-semibold mb-4">Services</h3>
-                            <ul className="space-y-2">
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Commercial Construction
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Residential Construction
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Industrial Construction
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Renovations
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Project Management
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Design-Build
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="font-semibold mb-4">Company</h3>
-                            <ul className="space-y-2">
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Our Team
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Projects
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Testimonials
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Careers
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Contact
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3 className="font-semibold mb-4">Resources</h3>
-                            <ul className="space-y-2">
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Blog
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        FAQ
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Safety Protocols
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Sustainability
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Terms of Service
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Privacy Policy
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div className="border-t mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-                        <p className="text-sm text-muted-foreground">
-                            © {new Date().getFullYear()} Ramadi Empire Construction. All rights reserved.
-                        </p>
-                        <div className="mt-4 md:mt-0">
-                            <ul className="flex gap-6 text-sm">
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Privacy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Terms
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary">
-                                        Sitemap
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </footer>
         </div>
     )
 }

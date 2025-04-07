@@ -6,9 +6,9 @@ import { Button } from "@/components/ui/button"
 
 export default function Home() {
   return (
-    <>
+    <div className="px-[2rem]">
       {/* Hero Section */}
-      <section id="home" className="relative">
+      {/* <section id="home" className="relative">
         <div className="absolute inset-0 z-0">
           <Image
             src="/placeholder.svg?height=800&width=1920"
@@ -47,7 +47,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* About Section */}
       <section id="about" className="py-16 md:py-24 bg-muted/50">
@@ -287,13 +287,11 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold mb-1">Address</h3>
                     <p className="text-muted-foreground">
-                      50 Bezuidenhout avenue
+                      157 Van Riebeek Ave,
                       <br />
-                      Bezuidenhout Avenue
+                      Edenvale, Johannesburg ,
                       <br />
-                      Johannesburg
-                      <br />
-                      2094
+                      1609
                     </p>
                   </div>
                 </div>
@@ -327,7 +325,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </>
+    </div>
   )
 }
 
