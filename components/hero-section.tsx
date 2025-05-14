@@ -2,16 +2,20 @@
 
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { FallbackImage } from "@/components/ui/fallback-image"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 z-0 bg-gray-900">
-        <FallbackImage
+        <Image
           src="/tt1.jpg"
           alt="Hero background"
+          fill
           priority
+          sizes="100vw"
+          quality={50}
+          style={{ objectFit: 'cover', objectPosition: 'center' }}
         />
         <div className="absolute inset-0 bg-black/80 z-10" />
       </div>

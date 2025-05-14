@@ -1,7 +1,6 @@
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
-import { TeamSection } from "@/components/team-section"
 import { ContactCTA } from "@/components/contact-cta"
 import { Footer } from "@/components/footer"
 import HomeServices from "@/components/services"
@@ -30,7 +29,6 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      <TeamSection />
       <TestimonialsSection />
       <ContactCTA />
       <Footer />

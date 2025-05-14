@@ -1,18 +1,20 @@
 import { Button } from "@/components/ui/button"
-import { FallbackImage } from "@/components/ui/fallback-image"
 import Link from "next/link"
+import Image from "next/image"
 
 export function AboutSection() {
   return (
     <section className="py-20" id="about">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-square">
-            <FallbackImage
+          <div className="relative aspect-square rounded-2xl overflow-hidden">
+            <Image
               src="/new/rc3.jpeg"
               alt="Ramadi Empire team working on a project"
-              className="rounded-2xl"
-              fallbackColor="#f3f4f6"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              quality={50}
+              style={{ objectFit: 'cover' }}
             />
           </div>
 
