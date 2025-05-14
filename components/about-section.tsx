@@ -1,13 +1,11 @@
 import { Button } from "@/components/ui/button"
 import { FallbackImage } from "@/components/ui/fallback-image"
 import Link from "next/link"
-import Navbar from "@/app/construction/navbar"
 
 export function AboutSection() {
   return (
     <section className="py-20" id="about">
-      <Navbar />
-      <div className="container mx-auto px-4 mt-8">
+      <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="relative aspect-square">
             <FallbackImage

@@ -1,10 +1,12 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import Navbar from "@/app/construction/navbar"
 
 export default function AboutPage() {
   return (
     <div className="min-h-screen">
+      <Navbar />
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-5xl mx-auto space-y-12">
