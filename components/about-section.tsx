@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import Image from "next/image"
+import { FallbackImage } from "@/components/ui/fallback-image"
 import Link from "next/link"
 import { ScrollAnimation } from "@/components/scroll-animation"
 
@@ -10,12 +10,11 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <ScrollAnimation>
             <div className="relative aspect-square">
-              <Image
+              <FallbackImage
                 src="/new/rc3.jpeg"
                 alt="Ramadi Empire team working on a project"
-                layout="fill"
-                objectFit="cover"
                 className="rounded-2xl"
+                fallbackColor="#f3f4f6"
               />
             </div>
           </ScrollAnimation>

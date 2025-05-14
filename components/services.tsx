@@ -1,4 +1,4 @@
-import Image from "next/image"
+import { FallbackImage } from "@/components/ui/fallback-image"
 import Link from "next/link"
 import { Phone, Mail, MapPin, ChevronRight } from "lucide-react"
 
@@ -151,11 +151,10 @@ export default function HomeServices() {
               </div>
             </div>
             <div className="md:w-1/2 relative min-h-[300px] md:min-h-[400px] rounded-lg overflow-hidden">
-              <Image
+              <FallbackImage
                 src="/construction/plumbing.jpg"
                 alt="Construction site with building and cranes"
-                fill
-                className="object-cover"
+                fallbackColor="#f3f4f6"
               />
             </div>
           </div>

@@ -3,19 +3,16 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { motion } from "framer-motion"
-import Image from "next/image"
+import { FallbackImage } from "@/components/ui/fallback-image"
 import { ScrollAnimation } from "@/components/scroll-animation"
 
 export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        <Image
+      <div className="absolute inset-0 z-0 bg-gray-900">
+        <FallbackImage
           src="/tt1.jpg"
           alt="Hero background"
-          layout="fill"
-          objectFit="cover"
-          quality={100}
           priority
         />
         <div className="absolute inset-0 bg-black/80 z-10" />

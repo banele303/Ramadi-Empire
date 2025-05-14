@@ -1,42 +1,35 @@
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
-import { ServicesSection } from "@/components/services-section"
 import { TestimonialsSection } from "@/components/testimonials-section"
 import { TeamSection } from "@/components/team-section"
 import { ContactCTA } from "@/components/contact-cta"
-import BlogList from "@/components/BlogList"
-import { client } from '@/sanity/lib/client'
 import { Footer } from "@/components/footer"
 import HomeServices from "@/components/services"
 import Navbar from "./construction/navbar"
+import Link from "next/link"
+import { Button } from "@/components/ui/button"
 
 
-async function getPosts() {
-  const posts = await client.fetch(`*[_type == "post"] | order(publishedAt desc) {
-    _id,
-    title,
-    slug,
-    mainImage,
-    publishedAt,
-    author->{name}
-  }`)
-  return posts
-}
-
-export default async function Home() {
-
-  const posts = await getPosts()
+export default function Home() {
   return (
     <div className="flex flex-col">
       <Navbar/>
       <HeroSection />
       <AboutSection />
-      {/* <ServicesSection /> */}
       <HomeServices/>
-      <div className="px-[2rem]">
-        <h1 className="text-4xl font-bold py-6 text-center">Projects</h1>
-        <BlogList posts={posts} />
-      </div>
+      
+      {/* Projects section with link to dedicated page */}
+      <section className="py-16 bg-muted/30">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Projects</h2>
+          <p className="text-lg mb-8 max-w-2xl mx-auto text-muted-foreground">
+            Explore our portfolio of completed and ongoing projects that showcase our expertise and commitment to excellence.
+          </p>
+          <Button size="lg" asChild>
+            <Link href="/projects">View All Projects</Link>
+          </Button>
+        </div>
+      </section>
       <TeamSection />
       <TestimonialsSection />
       <ContactCTA />

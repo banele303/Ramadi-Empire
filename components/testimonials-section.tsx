@@ -3,24 +3,24 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const TESTIMONIALS = [
   {
-    name: "John Doe",
-    role: "Project Manager, BuildCo Ltd.",
+    name: "Samuel Mokoena",
+    role: "Project Director, Urban Development Corp",
     content:
-      "Ramadi Empire's expertise in tendering services has been instrumental in our success. Their attention to detail and industry knowledge is unparalleled.",
+      "Ramadi Empire's civil construction expertise transformed our commercial development project. Their team delivered exceptional quality work on time and within budget. Highly recommended for any construction project.",
     avatar: "/placeholder.svg?height=40&width=40",
   },
   {
-    name: "Jane Smith",
-    role: "CFO, ConstructAll Inc.",
+    name: "Thandi Nkosi",
+    role: "Operations Manager, Johannesburg Properties",
     content:
-      "The quantity surveying team at Ramadi Empire has saved us both time and money. Their accuracy and professionalism are top-notch.",
+      "We've partnered with Ramadi Empire for our maintenance services for over two years. Their reliability, professionalism and attention to detail have made them our go-to contractor for all our property needs.",
     avatar: "/placeholder.svg?height=40&width=40",
   },
   {
-    name: "Mike Johnson",
-    role: "Procurement Director, MegaBuild Corp",
+    name: "David Mabaso",
+    role: "Site Manager, Infrastructure Solutions",
     content:
-      "We've been consistently impressed with Ramadi Empire's supply chain management. They've streamlined our procurement process significantly.",
+      "The plant hire services from Ramadi Empire exceeded our expectations. Their equipment was well-maintained, delivered promptly, and their operators were highly skilled. They were crucial to completing our project ahead of schedule.",
     avatar: "/placeholder.svg?height=40&width=40",
   },
 ]

@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { ChevronDown, Menu, X, Home, Info, Briefcase, Award, Phone } from "lucide-react"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 import { Button } from "@/components/ui/button"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
@@ -94,6 +95,9 @@ export default function Navbar() {
                         <Link href="/construction" className="text-sm font-medium transition-colors hover:text-primary">
                             Construction
                         </Link>
+                        <Link href="/projects" className="text-sm font-medium transition-colors hover:text-primary">
+                            Projects
+                        </Link>
 
                         {/* Services Dropdown */}
                         <DropdownMenu>
@@ -132,7 +136,8 @@ export default function Navbar() {
                         </Link>
                     </nav>
 
-                    <div className="hidden md:flex">
+                    <div className="hidden md:flex items-center gap-2">
+                        <ThemeToggle />
                         <Link href="tel:+27 76 223 2914">
                             <Button size="lg">Call Now</Button>
                         </Link>
@@ -163,12 +168,20 @@ export default function Navbar() {
                             Home
                         </Link>
                         <Link
-                            href="/#about"
+                            href="/about"
                             className="flex items-center gap-2 py-3 text-lg font-medium border-b"
                             onClick={() => setIsOpen(false)}
                         >
                             <Info className="h-5 w-5" />
                             About
+                        </Link>
+                        <Link
+                            href="/projects"
+                            className="flex items-center gap-2 py-3 text-lg font-medium border-b"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            <Briefcase className="h-5 w-5" />
+                            Projects
                         </Link>
 
                         {/* Mobile Services List */}
@@ -200,7 +213,7 @@ export default function Navbar() {
                             Why Choose Us
                         </Link>
                         <Link
-                            href="tel:+27 76 223 2914"
+                            href="/contact"
                             className="flex items-center gap-2 py-3 text-lg font-medium border-b"
                             onClick={() => setIsOpen(false)}
                         >
@@ -210,9 +223,13 @@ export default function Navbar() {
 
 
 
-                        <div className="mt-6">
+                        <div className="mt-6 space-y-4">
+                            <div className="flex justify-center py-2">
+                                <ThemeToggle />
+                                <span className="ml-2 text-lg font-medium">Theme</span>
+                            </div>
                             <Button className="w-full" onClick={() => setIsOpen(false)}>
-                                Get In Touch
+                                <Link href="/contact">Get In Touch</Link>
                             </Button>
                         </div>
                     </nav>

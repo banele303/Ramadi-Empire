@@ -1,4 +1,4 @@
-import Image from "next/image"
+import { FallbackImage } from "@/components/ui/fallback-image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
@@ -40,12 +40,11 @@ export function TeamSection() {
             <Card key={member.name}>
               <CardContent className="p-0">
                 <div className="relative h-64">
-                  <Image
+                  <FallbackImage
                     src={member.image || "/placeholder.svg"}
                     alt={member.name}
-                    layout="fill"
-                    objectFit="cover"
                     className="rounded-t-lg"
+                    fallbackColor="#f3f4f6"
                   />
                 </div>
                 <div className="p-4">

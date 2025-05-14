@@ -2,16 +2,14 @@ import Link from 'next/link';
 import { ContactHeroSection } from "@/components/about-us-contact"
 import { Button } from "@/components/ui/button"
 import {
-
   Clock,
-
   Mail,
   MapPin,
   Phone,
-
 } from "lucide-react"
 import Navbar from '../construction/navbar';
 import { Footer } from '@/components/footer';
+import { ContactForm } from '@/components/contact-form';
 
 export default function ContactPage() {
   return (
@@ -38,7 +36,7 @@ export default function ContactPage() {
                   <MapPin className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold">Our Office</h3>
-                    <p className="text-muted-foreground">ramadiempire@gmail.com</p>
+                    <p className="text-muted-foreground">info@ramadiempire.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -52,7 +50,7 @@ export default function ContactPage() {
                   <Mail className="h-5 w-5 text-primary shrink-0 mt-0.5" />
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-muted-foreground">infoRamadi Empire-construction.com</p>
+                    <p className="text-muted-foreground">info@ramadiempire.com</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -77,96 +75,9 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="bg-background rounded-lg p-6 border shadow-sm">
-              <h3 className="text-xl font-bold mb-6">Contact Form</h3>
-              <form className="space-y-4">
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div className="space-y-2">
-                    <label htmlFor="first-name" className="text-sm font-medium">
-                      First Name
-                    </label>
-                    <input
-                      id="first-name"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="Nkosana"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="last-name" className="text-sm font-medium">
-                      Last Name
-                    </label>
-                    <input
-                      id="last-name"
-                      className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                      placeholder="Sibanda"
-                    />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">
-                    Email
-                  </label>
-                  <input
-                    id="email"
-                    type="email"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="john.nkosana@example.com"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-medium">
-                    Phone
-                  </label>
-                  <input
-                    id="phone"
-                    type="tel"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="+27 83 123-4567"
-                  />
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="project-type" className="text-sm font-medium">
-                    Project Type
-                  </label>
-                  <select
-                    id="project-type"
-                    className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                  >
-                    <option value="" disabled selected>
-                      Select Project Type
-                    </option>
-                    <option value="commercial">Commercial Construction</option>
-                    <option value="residential">Residential Construction</option>
-                    <option value="industrial">Industrial Construction</option>
-                    <option value="renovation">Renovation</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    Project Details
-                  </label>
-                  <textarea
-                    id="message"
-                    className="flex min-h-[120px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    placeholder="Please provide details about your project, including location, timeline, and specific requirements."
-                  ></textarea>
-                </div>
-                <div className="flex items-start gap-2">
-                  <input
-                    type="checkbox"
-                    id="consent"
-                    className="mt-1 h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary"
-                  />
-                  <label htmlFor="consent" className="text-sm text-muted-foreground">
-                    I consent to Ramadi Empire Construction collecting and storing my data from this form to respond to
-                    my inquiry.
-                  </label>
-                </div>
-                <Button type="submit" className="w-full">
-                  Submit
-                </Button>
-              </form>
+            <div className="bg-background rounded-lg shadow-sm">
+              {/* Use the improved contact form component */}
+              <ContactForm />
             </div>
           </div>
         </div>
